@@ -1,0 +1,89 @@
+.video-container {
+    padding: 20px;  /* Reduzi a margem para otimizar o espaço */
+    text-align: center;
+  }
+  
+  .video-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;  /* Garantir que o título tenha cor branca */
+  }
+  
+  /* Dados Técnicos */
+  .dados-tecnicos {
+    padding: 40px;
+    background-color: rgba(27, 20, 23, 0.856);
+
+  }
+  
+  .dados-tecnicos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:  rgba(255, 255, 255, 0.856);  
+  }
+  
+  /* Layout com grid para exibir o conteúdo em duas colunas */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 40px;
+  }
+  
+  .texto {
+    background: rgba(27, 20, 23, 0.856);  /* Cor de fundo com opacidade */
+    padding: 100px;
+    text-align: center;
+    font-size: 1.2rem;  /* Ajustei o tamanho da fonte para facilitar a leitura */
+    color: #ffffff;  /* Cor do texto branca */
+    transition: transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  .texto:hover {
+    transform: translateY(-10px); /* Efeito de elevação ao passar o mouse */
+  }
+  
+  /* Responsividade - ajustes para telas pequenas */
+  @media screen and (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr;  /* Uma coluna em telas pequenas */
+    }
+  
+    .video-container {
+      padding: 20px;  /* Reduzindo o padding para telas menores */
+    }
+  
+    .texto {
+      font-size: 1rem;  /* Ajustando o tamanho da fonte para telas menores */
+      padding: 15px;  /* Menos padding em telas pequenas */
+    }
+  }
+  .card {
+    background:  rgba(27, 20, 23, 0.856);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.973);
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  .card p {
+    font-size: 1rem;
+    color: #ffffff;
+  }
+  

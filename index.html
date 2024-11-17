@@ -1,51 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles/style.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>San Junipero - Home</title>
+  <link rel="stylesheet" href="styles/globais.css"> <!-- Link para o CSS da Home -->
+  <link rel="stylesheet" href="styles/home.css"> <!-- Link para o CSS da Home -->
+  <link rel="stylesheet" href="styles/menu.css"> <!-- Link para o CSS da Home -->
 
-    <title>Watamote!!!!!!!!!!!!!!!!!!</title>
-<style> </style>
 </head>
 <body>
+    <!-- input dentro da header aparentemente não funciona...-->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
 
-<header>
-    <h1>Watamote!!!</h1>
-</header>
-
-<nav>
-    <a href="#sobre">Watamote</a>
-    <a href="#TomokoKuroki">Tomoko Kuroki</a>
-    <a href="#extraAbertura">Abertura Watamote </a>
-</nav>
-
-<main>
-    <div id="sobre" class="content">
-        <h2>Sobre Watamote</h2>
-        <p><em>Watashi ga Motenai no wa Dou Kangaetemo Omaera ga Warui!</em> ouuuu  <strong>Watamote</strong>, é um anime que explora a vida de Tomoko Kuroki, uma estudante do ensino médio que enfrenta desafios sociais e tenta superar sua timidez e inseguranças.</p>
-    </div>
-
-    <div id="TomokoKuroki"  class="content character-section">
-        <img src="image/images.jfif" alt="Tomoko Kuroki">
-        <div>
-            <h2>Sobre Tomoko Kuroki</h2>
-            <p><a href="https://en.wikipedia.org/wiki/No_Matter_How_I_Look_at_It,_It%27s_You_Guys%27_Fault_I%27m_Not_Popular!">Tomoko Kuroki </a>, protagonista de <em>Watamote</em>, é uma adolescente tímida e socialmente desajeitada que enfrenta dificuldades em se adaptar ao ambiente escolar. Embora tenha o desejo de ser popular, Tomoko lida com a ansiedade e a solidão, o que a leva a situações constrangedoras e engraçadas. Sua personalidade única, marcada por insegurança e uma imaginação fértil, oferece uma visão cômica e, ao mesmo tempo, profunda dos desafios enfrentados por jovens introvertidos em busca de aceitação.</p>
-        </div>
-    </div>
-
-
-    <div id = "extraAbertura"  class="video-section content">
-        <h2>Abertura de Watamote </h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/gZYq7rat9d4?si=9h2tQVtowSOvyBBD" title="abertura Watamote" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- Menu lateral -->
+    <div class="sidebar">
+      <ul>
         <br>
-        <a href="https://watamote.fandom.com/wiki/Watashi_ga_Motenai_no_wa_d%C5%8D_Kangaetemo_Omaera_ga_Warui!">+</a>
+        <li><a href="/Home.html">Home</a></li>
+        <li><a href="/Sobre.html">Sobre</a></li>
+        <li><a href="/Trilha.html">Escutar</a></li>
+        <li><a href="/Elenco.html">Elenco</a></li>
+      </ul>
     </div>
-</main>
+    <header class="header">
+      <h1>San Junipero</h1>
+    
+      <!-- Botão do menu com imagem -->
+      <label for="menu-toggle" class="menu-icon">
+        <img src="/image/menu/menu.svg" alt="Menu"> <!-- Substitua pelo caminho correto da sua imagem -->
+      </label>
+    
+    </header>
+  <main class="main">
+    <!-- Seção de Grid -->
+    <section class="container">
+      <div><a href="/Elenco.html"><img src="/image/3cea5e5bd352f6b00be3727b2b816a25.jpg" alt="Imagem Modelo" class="img-modelo"></a> <p>Elenco</p></div>
+      <div><a href="/Sobre.html"><img src="/image/db5019337377999505df98f5009331bf.jpg" alt="Imagem Modelo" class="img-modelo"></a><p>Sobre San juniper</p></div>
+      <div><a href="/Trilha.html"><img src="/image/de2134ef40b2f31cb367fc43a16bb422.jpg" alt="Imagem Modelo" class="img-modelo"></a><p>Trila Sonora</p></div>
+    </section>
+  </main>
 
-<footer>
-    <p>&copy; 2024 amanda :)    - Todos os direitos reservados</p>
-</footer>
-
+  <footer class="footer">
+    <p>© 2024 San Junipero. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>

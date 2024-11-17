@@ -1,15 +1,15 @@
 .video-container {
-    padding: 20px;  /* Reduzi a margem para otimizar o espaço */
+    padding: 20px;  
     text-align: center;
   }
   
   .video-container h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #fff;  /* Garantir que o título tenha cor branca */
+    color: #fff; 
   }
   
-  /* Dados Técnicos */
+
   .dados-tecnicos {
     padding: 40px;
     background-color: rgba(27, 20, 23, 0.856);
@@ -22,40 +22,40 @@
     color:  rgba(255, 255, 255, 0.856);  
   }
   
-  /* Layout com grid para exibir o conteúdo em duas colunas */
+
   .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 40px;
   }
   
   .texto {
-    background: rgba(27, 20, 23, 0.856);  /* Cor de fundo com opacidade */
+    background: rgba(27, 20, 23, 0.856);
     padding: 100px;
     text-align: center;
-    font-size: 1.2rem;  /* Ajustei o tamanho da fonte para facilitar a leitura */
-    color: #ffffff;  /* Cor do texto branca */
+    font-size: 1.2rem;
+    color: #ffffff; 
     transition: transform 0.3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   }
   
   .texto:hover {
-    transform: translateY(-10px); /* Efeito de elevação ao passar o mouse */
+    transform: translateY(-10px); 
   }
   
-  /* Responsividade - ajustes para telas pequenas */
+ 
   @media screen and (max-width: 768px) {
     .grid {
-      grid-template-columns: 1fr;  /* Uma coluna em telas pequenas */
+      grid-template-columns: 1fr;  
     }
   
     .video-container {
-      padding: 20px;  /* Reduzindo o padding para telas menores */
+      padding: 20px; 
     }
   
     .texto {
-      font-size: 1rem;  /* Ajustando o tamanho da fonte para telas menores */
-      padding: 15px;  /* Menos padding em telas pequenas */
+      font-size: 1rem;  
+      padding: 15px; 
     }
   }
   .card {

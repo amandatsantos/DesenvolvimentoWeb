@@ -1,36 +1,36 @@
 
-/* Menu icon (imagem) */
+
 .menu-icon img {
-  width: 30px; /* Tamanho do ícone */
-  cursor: pointer; /* Cursor de clique */
+  width: 30px; 
+  cursor: pointer; 
 }
 
-/* Checkbox toggle escondido */
+
 .menu-toggle {
-  display: none; /* Esconde o checkbox */
+  display: none; 
 }
 
-/* Sidebar (menu lateral) */
+
 .sidebar {
   position: fixed;
-  top: 60px; /* Começa abaixo da header */
-  left: -250px; /* Fora da tela inicialmente */
-  width: 250px; /* Largura fixa */
-  height: calc(100% - 60px); /* Ocupa o restante da altura */
+  top: 60px; 
+  left: -250px; 
+  width: 250px; 
+  height: calc(100% - 60px); 
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
-  z-index: 900; /* Abaixo da header */
-  transition: left 0.3s ease; /* Animação ao abrir/fechar */
+  z-index: 900; 
+  transition: left 0.3s ease; 
   padding: 20px;
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* Sidebar quando o checkbox está marcado */
+
 .menu-toggle:checked ~ .sidebar {
-  left: 0; /* Move o menu para dentro da tela */
+  left: 0; 
 }
 
-/* Estilo dos itens do menu */
+
 .sidebar ul {
   list-style: none;
   padding: 0;
@@ -48,8 +48,6 @@
 }
 
 
-/* Ajusta o conteúdo principal para começar abaixo da header */
 .main-content {
-  margin-top: 60px; /* Espaço para a header */
-  padding: 20px;
+  margin-top: 60px;
 }

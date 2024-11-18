@@ -1,9 +1,8 @@
-
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    padding: 200px; 
+    padding: 50px 30px; 
     justify-content: center;
     align-items: center;
 }
@@ -21,15 +20,14 @@
     transform: scale(1.05);
 }
 
-
 .photocard {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: rgba(0, 0, 0, 0.8); 
+    background-color: rgba(0, 0, 0, 0.8);
     text-align: center;
     font-family: 'Arial', sans-serif;
     overflow: hidden;
-    padding: 20px; 
+    padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     color: white;
 }
@@ -40,11 +38,11 @@
 }
 
 .photocard img {
-    width: 120px; 
+    width: 120px;
     height: 120px;
     border-radius: 50%;
     margin-bottom: 15px;
-    border: 3px solid white; 
+    border: 3px solid white;
 }
 
 .photocard h4 {
@@ -60,27 +58,31 @@
 }
 
 
-
 @media (max-width: 1200px) {
     .grid-container {
         grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
     }
 }
 
 @media (max-width: 900px) {
     .grid-container {
         grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
     }
 }
 
 @media (max-width: 600px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
 }
 
 @media (max-width: 400px) {
     .grid-container {
         grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 60px; 
     }
 }
